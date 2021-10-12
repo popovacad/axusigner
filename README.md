@@ -33,8 +33,8 @@
 
 Снимок окна программы, запущенной под ОС Windows:
 
-![screen1](docs\screen1.jpg)
+![screen1](docs/screen1.jpg)
 
 Пример проставленной ПЭП и водяного знака в документе:
 
-![example1](docs\example1.jpg)
+![example1](docs/example1.jpg)
