@@ -345,10 +345,12 @@ public class Main {
 		term.println("0. <Отменить операцию>");
 
 		for (Path keyFile : keyFilePaths) {
+			int finalKeyFileIndex = keyFileIndex;
 			term.executeWithPropertiesConfigurator(
 				p -> { p.setPromptColor(Color.WHITE); },
-				t -> { t.println(keyFileIndex + ". " + keyFile.getFileName().toString()); }
+				t -> { t.println(finalKeyFileIndex + ". " + keyFile.getFileName().toString()); }
 			);
+			keyFileIndex++;
 		}
 
 		int selKeyFileIndex = con.newIntInputReader()
